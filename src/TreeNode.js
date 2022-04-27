@@ -23,8 +23,8 @@ function createTreeNode(data) {
         let next = [];
 
         for (let i = 0; i < current.length; i++) {
-            current[i].left = new TreeNode(data[k++]);
-            current[i].right = new TreeNode(data[k++]);
+            if (k < n) current[i].left = new TreeNode(data[k++]);
+            if (k < n) current[i].right = new TreeNode(data[k++]);
 
             next.push(current[i].left, current[i].right);
         }
