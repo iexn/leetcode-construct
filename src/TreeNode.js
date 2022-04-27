@@ -6,7 +6,7 @@ function TreeNode(val, left, right) {
 
 function createTreeNode(data) {
     if (data.length == 0) {
-        return new TreeNode(null);
+        return null;
     }
 
     let Tree = new TreeNode(data[0]);
